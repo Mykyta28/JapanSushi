@@ -22,7 +22,7 @@ const cartReducer = (state, action) => {
                 amount: existingCartItem.amount + action.item.amount,
             }
 
-            updatedItems = [...state.items]; // state.items: banana - 2, orange - 1, potato - 3
+            updatedItems = [...state.items];
             updatedItems[cartItemIndex] = updatedItem;
         }else{
             updatedItems = state.items.concat({
@@ -30,7 +30,7 @@ const cartReducer = (state, action) => {
             });
         }
        
-        const updetedItemAmount = state.totalAmount + action.item.price * action.item.amount;// where we get "amount" property and "item"
+        const updetedItemAmount = state.totalAmount + action.item.price * action.item.amount;
         return {
             items: updatedItems,
             totalAmount: updetedItemAmount
