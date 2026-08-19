@@ -5,28 +5,28 @@ import MealItem from './MealItem/MealItem';
 const DUMMY_MEALS = [
     {
       id: "m1",
-      name: 'Ролл "Наоми"',
+      name: '"Naomi" Roll',
       description:
-        "Сыр Филадельфия, куриное филе, масаго, помидор, огурец, кунжут",
+        "Philadelphia cream cheese, chicken fillet, masago, tomato, cucumber, sesame seeds.",
       price: 11.99,
     },
     {
       id: "m2",
-      name: "Спайс в лососе",
-      description: "Рис, лосось, соус спайс",
+      name: "Spice in salmon",
+      description: "Rice, salmon, spice sauce",
       price: 3.99,
     },
     {
       id: "m3",
-      name: "Суши с угрем",
-      description: "Угорь копченый, соус унаги, кунжут",
+      name: "Eel sushi",
+      description: "Smoked eel, unagi sauce, sesame",
       price: 4.99,
     },
     {
       id: "m4",
-      name: 'Салат "Поке с лососем"',
+      name: 'Salmon "Poke Salad"',
       description:
-        "Рис, лосось, огурец, чука, нори, стружка тунца, соус ореховый",
+        "Rice, salmon, cucumber, chuka seaweed, nori, bonito flakes, nutty sauce.",
       price: 7.99,
     },
   ];
