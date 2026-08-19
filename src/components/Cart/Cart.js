@@ -8,7 +8,11 @@ const Cart = (props) => {
 
     const cartContext = useContext(CartContext);
 
-    const totalAmount = `$${Math.abs(cartContext.totalAmount).toFixed(2)}`;
+
+    const totalAmount = cartContext.items.reduce(
+    (total, item) => total + item.price * item.amount,
+    0
+).toFixed(2);
 
     const addItemHendler = (item) => {
         cartContext.addItem({...item, amount: 1})
