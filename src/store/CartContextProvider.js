@@ -2,7 +2,7 @@ import CartContext from "./cart-context";
 import { useReducer } from "react";
 
 const defaultCartItems = {
-    items: JSON.parse(localStorage.getItem('cartItem')),
+    items: JSON.parse(localStorage.getItem('cartItem')) || [],
     totalAmount: 0
 }
 
@@ -85,8 +85,8 @@ const CartContextProvider = (props) => {
     }
 
     const cartContext = {
-        items: cartState.items, // how do we get "items" array here
-        totalAmount: cartState.totalAmount,  // the same
+        items: cartState.items, 
+        totalAmount: cartState.totalAmount,  
         addItem: addItemHendler,
         removeItem: removeItemHendler,
     };
